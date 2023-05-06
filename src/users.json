@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ram",
+      "password": "123",
+      "email": "ram@gmail.com",
+      "name": "Ram Prasad"
+    },
+    {
+      "id": 2,
+      "username": "hari ",
+      "password": "456",
+      "email": "hari@gmail.com",
+      "name": "Hari Bahadur"
+    }
+  ]
+}

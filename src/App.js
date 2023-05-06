@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Login from './Login';
+import usersData from './users.json';
+import "./App.css"
 
-function App() {
+export default function App() {
+  const [user, setUser] = React.useState(null);
+
+  function handleLogin(user) {
+    setUser(user);
+  };
+
+  function handleLogout (){
+    setUser(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {user ? (
+        <div>
+          <h1> Hello , {user.name}!. Your email is {user.email} excited to present you my authenticator applicaton
+            </h1>
+          <button onClick={handleLogout} className='buttonStyle'>Logout</button>
+        </div>
+      ) : (
+        <Login handleLogin={handleLogin} />
+      )}
     </div>
   );
-}
-
-export default App;
+};
