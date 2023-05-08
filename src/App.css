@@ -1,9 +1,129 @@
-.buttonStyle{
-  background-color: green;
-  color: aliceblue;
-  margin:10px,15px;
-  padding: 10px,15px;
-  height: 20px;
-  width: 70px;
+body{
+  margin: 0%;
+  background-color: black;
+  
+  
+
+  .mainDesign{
+    
+    background-color:black;
+    margin-top:140px;
+   
+    display: flex;
+    align-items: right;
+    float :right;
+    width:950px;
+  }
+
+  .logoStyleLogin{
+    height:70px;
+    width:270px;
+    padding-top:150px;
+    padding-left:15px;
+   } 
+
+  .taglineStyle{
+    
+    color: white;
+    font-weight:19px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top:0px;
+    padding-top:0px;
+  }
 
 }
+.loginStyle{
+  display: flex;
+  justify-content: center; /* center horizontally */
+  padding: 20px;
+  font-weight: 500;
+
+  
+align-items: center;
+ font-size: 30px;
+ /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.loginFormStyle{
+  
+  
+  background-color: white;
+  height: 580px;
+  width :500px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  
+  
+
+  
+
+}
+.labelStyle{
+  display:flex;
+  align-items: left;
+  font-size: 16px;
+  padding-top:20px;
+  padding-left: 10px;
+}
+
+
+
+.textFieldStyle{
+  width: 90%;
+  height:30px;
+  margin-left:15px;
+ 
+
+  border-radius: 8px ;
+  border: 1px solid red;
+  
+  
+  
+
+  
+}
+
+.starStyle{
+  padding-right:6px;
+  font-size: 20px;
+  color:red;
+
+}
+
+.forgetPasswordStyle{
+  
+  text-align: center;
+  color:solid black;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.loginButtonStyle{
+  height: 40px;
+  width:95%;
+  background-color: red;
+  color:white;
+  border-radius: 25px;
+  border:none;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+ #privacyStyle{
+  margin-right: 4px;
+  
+ }
+
+ #donotStyle{
+  color: red;
+  
+  
+ }
+
+ .h1Style{
+  color: white;
+ }
+
+
+
+ 

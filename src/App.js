@@ -1,30 +1,35 @@
-import React from 'react';
-import Login from './Login';
-import usersData from './users.json';
-import "./App.css"
+import React from "react";
+import  ReactDOM  from "react-dom";
+import Login from"./Login"
+import usersData from "./users.json"
 
-export default function App() {
-  const [user, setUser] = React.useState(null);
+export default function(){
+  const [user,setUser]=React.useState("")
 
-  function handleLogin(user) {
-    setUser(user);
-  };
+  const handleLogin=(user)=>{
+    setUser(user)
 
-  function handleLogout (){
-    setUser(null);
-  };
+  }
+  const handleLogout=()=>{
+    setUser(null)
 
-  return (
+  }
+
+  return(
     <div>
-      {user ? (
-        <div>
-          <h1> Hello , {user.name}!. Your email is {user.email} excited to present you my authenticator applicaton
-            </h1>
-          <button onClick={handleLogout} className='buttonStyle'>Logout</button>
-        </div>
-      ) : (
-        <Login handleLogin={handleLogin} />
-      )}
+      {
+        user?(<div>
+          <h1 className="h1Style">
+            Hello {usersData.name } welcome to our site 
+
+          </h1>
+          <button onClick={handleLogout}> Logout </button>
+          
+
+        </div>):
+        (<Login handleLogin={handleLogin}/>)
+      }
+
     </div>
-  );
-};
+  )
+}
